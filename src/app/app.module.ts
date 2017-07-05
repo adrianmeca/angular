@@ -7,8 +7,8 @@ import { LoginComponent }  from './pages/login/login.component';
 import { RouterModule,Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-	{ path:'Login' component:LoginComponent } 
-]
+	{ path:'Login' , component:LoginComponent } 
+];
 
 @NgModule({
   imports:      [ BrowserModule, RouterModule.forRoot(appRoutes) ],

@@ -8,11 +8,11 @@ export class HeaderComponent{
 	title: string = "Tittle";
 	options: any[] = [		
 		{
-			"title":"Sobre nosotros"
+			"title":"Sobre nosotros",
 			"path":"about"	
 		},
 		{
-			"title":"Login"
+			"title":"Login",
 			"path":"Login"	
 		}
 	];
