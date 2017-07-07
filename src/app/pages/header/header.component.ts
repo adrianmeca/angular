@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'header-layout',
   templateUrl: './header.html',
 })
 export class HeaderComponent{
-	title: string = "Tittle";
+	title: string = "Title";
 	options: any[] = [		
 		{
 			"title":"Sobre nosotros",

@@ -1,0 +1,9 @@
+<form  [formGroup]="myform" (ngSubmit)="submitForm()" *ngFor="let con of controls">
+  <div class="form-group" *ngIf = "con.type != 'submit'">
+    <label for="{{con.id}}">{{con.label}}</label>
+    <input type="{{con.type}}" class="{{con.class}}" id="{{con.id}}" >
+ </div>
+ <div class="form-group" *ngIf = "con.type == 'submit'">
+  	<button type="submit" class="{{con.class}}">{{con.label}}</button>
+ </div>
+</form> 

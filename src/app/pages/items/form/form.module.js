@@ -6,27 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var HeaderComponent = (function () {
-    function HeaderComponent() {
-        this.title = "Title";
-        this.options = [
-            {
-                "title": "Sobre nosotros",
-                "path": "about"
-            },
-            {
-                "title": "Login",
-                "path": "Login"
-            }
-        ];
+var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
+var form_component_1 = require("./form.component");
+var FormModule = (function () {
+    function FormModule() {
     }
-    return HeaderComponent;
+    return FormModule;
 }());
-HeaderComponent = __decorate([
-    core_1.Component({
-        selector: 'header-layout',
-        templateUrl: './header.html',
+FormModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule, forms_1.FormsGroup, forms_1.ReactiveFormsModule],
+        declarations: [form_component_1.FormComponent]
     })
-], HeaderComponent);
-exports.HeaderComponent = HeaderComponent;
-//# sourceMappingURL=header.component.js.map
+], FormModule);
+exports.FormModule = FormModule;
+//# sourceMappingURL=form.module.js.map

@@ -7,9 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var app_component_1 = require("./app.component");
 var header_component_1 = require("./pages/header/header.component");
 var login_component_1 = require("./pages/login/login.component");
 var router_1 = require("@angular/router");
+var form_component_1 = require("./pages/items/form/form.component");
 var appRoutes = [
     { path: 'Login', component: login_component_1.LoginComponent }
 ];
@@ -21,8 +23,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(appRoutes)],
-        declarations: [header_component_1.HeaderComponent, login_component_1.LoginComponent],
-        bootstrap: [header_component_1.HeaderComponent]
+        declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, login_component_1.LoginComponent, form_component_1.FormComponent],
+        bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;

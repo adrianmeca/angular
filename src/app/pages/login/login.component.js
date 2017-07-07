@@ -8,6 +8,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var LoginComponent = (function () {
     function LoginComponent() {
+        this.title = "Iniciar sesion";
+        this.controls = [
+            {
+                "id": "email",
+                "type": "email",
+                "class": "form-control",
+                "label": "Ingrese su mail"
+            },
+            {
+                "id": "password",
+                "type": "password",
+                "class": "form-control",
+                "label": "Ingrese su contraseña"
+            },
+            {
+                "type": "submit",
+                "class": "btn btn-default pull-right",
+                "label": "Iniciar sesion",
+                "action": ""
+            }
+        ];
     }
     return LoginComponent;
 }());
